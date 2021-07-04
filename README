@@ -34,4 +34,4 @@ slstatus config.h
     	/* function    format   argument */
     	{ run_command, "%s   ", "sw show" },
     	[...]
-	};
+    };
