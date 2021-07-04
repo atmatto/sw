@@ -19,19 +19,19 @@ dwm config.h
     static const char *swreset[]  = { "sw", "reset", NULL };
     static const char *swresume[]  = { "sw", "resume", NULL };
     static const char *swpause[]  = { "sw", "pause", NULL };
-	[...]
-	static Button buttons[] = {
-		/* click                event mask      button          function        argument */
-		{ ClkStatusText,        0,              Button2,        spawn,          {.v = swreset } },
-		{ ClkStatusText,        0,              Button1,        spawn,          {.v = swresume } },
-		{ ClkStatusText,        0,              Button3,        spawn,          {.v = swpause } },
-		[...]
-	};
+    [...]
+    static Button buttons[] = {
+    	/* click                event mask      button          function        argument */
+    	{ ClkStatusText,        0,              Button2,        spawn,          {.v = swreset } },
+    	{ ClkStatusText,        0,              Button1,        spawn,          {.v = swresume } },
+    	{ ClkStatusText,        0,              Button3,        spawn,          {.v = swpause } },
+    	[...]
+    };
 
 slstatus config.h
 
     static const struct arg args[] = {
-		/* function    format   argument */
-		{ run_command, "%s   ", "sw show" },
-		[...]
+    	/* function    format   argument */
+    	{ run_command, "%s   ", "sw show" },
+    	[...]
 	};
